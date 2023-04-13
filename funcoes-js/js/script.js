@@ -1,18 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<script src="./js/script.js" defer></script>
-</head>
-<body>g
-    <h1>FUNÇÕES</h1>
 
-    <div>
-    form[action=#][method-get][onsubmit=return false]>fieldset>legend{Cadastro}
-    </div>
+//Retornando uma lista de HTML-objects
+//const inputs = document.getElementsByTagName("input");
 
-</body>
-</html>
+//Convertendo a list de objects HTML para Array com SPREAD
+const inputs = [...document.getElementsByTagName("input")];
+
+//Listando os elementos dA lista com FOR-EACH
+inputs.forEach((elemento)=>{
+   //Utilizando o elemento que estava na lista
+console.log(elemento);
+})
+
+function soma() {
+    n1 = 10;
+    n2 = 5;
+console.log('Resultado da soma : ${n1+n2}')
+}
+
+function validacao() {
+const insputs = [...document.getElementsByTagName("input")];
+
+inputs.forEach((elemento)=>{
+
+    if(elemento.innerText == ""){
+        alert("PREENCHA TODOS OS CAMPOS!")
+        return;
+    }
+})
