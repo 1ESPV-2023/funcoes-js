@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Funções</title>
     <script src="./JS/script.js" defer></script>
-
 </head>
 <body>
-
     <h1>FUNÇÕES</h1>
-    
+        <div>
+
+        <form action="#" method="get" onsubmit="return false">
+         <fieldset>
+                <legend>Cadastro</legend>
+
+                <div>
+                    <label for="">Usuário</label><br/>
+                    <input type="text" name="txtUser" id="idUser">
+                </div>
+                <div>
+                    <label for="">Senha</label><br/>
+                    <input type="password" name="txtPass" id="idPass">
+                </div>
+                <div>
+                    <button type="button" onclick="validacao()" id="bntSubmit" value="SUBMIT">SUBMIT</button>
+                </div>
+          </fieldset>
+        </form>
+    </div>    
 </body>
 </html>
